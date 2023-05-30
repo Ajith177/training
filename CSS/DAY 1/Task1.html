@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE and FORM
+    </title>
+    <link rel="stylesheet" type="text/css" href="Task1.css">
+</head>
+<body>
+    <h2 id="sara"><marquee direction="left">SARANATHAN COLLEGE OF ENGINEERING, INDRAGANESAN COLLEGE OF ENGINEERING, JJ COLLEGE OF ENGINEERING,  BISHOP KEEPER COLLEGE,  RAMAKRISHNA COLLEGE OF ENGINEERING,   PSNA COLLEGE OF ENGINEERING  </marquee></h2>
+    <div id="ajith">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#About">ABOUT</a>
+            <a href="#">CONTACT</a>
+            <a href="#">LAST</a>
+        </nav>
+    </div>
+    <center>
+        <h2 id="college"> Counselling-venue: SARANATHAN COLLEGE OF ENGINEERING-TRICHY</h2>
+        <b id="counsil"><u>COUNSELLING-FORM</u></b><br><br>
+    </center>
+    <div id="form">
+    <label for="name"><b>NAME:</b></label>
+    <input type="text" name="name"  background-color="wheat" placeholder="Enter your name" required pattern="[A-Za-z]+"><br><br>
+    <label for="Email"><b>EMAIL:</b></label>
+    <input type="email" name="Email" placeholder="Enter your Email"><br><br>
+    <label for="age"><b>AGE:</b></label>
+    <input type="number" name="age" placeholder="Enter your  current age" required pattern="0-9"><br><br>
+    <label for="gen"><b>GENDER:</b></label>
+    <input type="radio" name="gen">MALE
+    <input type="radio" name="gen">FEMALE<br>
+    <h3>Food will be provided in campus on counselling period.(both parents and students)</h3>
+    <h4>Students and parents are requested to <u>Don't waste the food</u></h4>
+    <label for="food"><b> AVAILABLE-FOODS:</b></label><br><br>
+    <input type="checkbox" name="food" value="dosa">
+    <label for="dosa"><b>DOSA</b></label>
+    <input type="checkbox" name="food" value="idly">
+    <label for="idly"><b>IDLY</b></label>
+    <input type="checkbox" name="food" value="Parotta">
+    <label for="parotta"><b>PONGAL</b></label>
+    <input type="checkbox" name="food" value="MEALS">
+    <label for="meals"><b>MEALS [limited] </b></label><br><br>
+    <label for="departments"><b>DEPARTMENTS:</b></label>
+    <select id="departments">
+        <option value="INFORMATION TECHNOLOGY">INFORMATION TECHNOLOGY</option>
+        <option value="INFORMATION TECHNOLOGY">COMPUTER SCIENCE ENGINEERING</option>
+        <option value="INFORMATION TECHNOLOGY">ELECTRICAL COMMUNICATION ENGINEERING</option>
+        <option value="INFORMATION TECHNOLOGY">ELECTRICAL ELECTRONIC ENGINEERING</option>
+        <option value="INFORMATION TECHNOLOGY">MECHANICAL ENGINEERING</option>
+    </select><br><br>
+    <label for="taluks"><b>MENTION YOUR STUDIES:</b></label>
+    <select id="taluk">
+        <option value="srv">SRV MATRIC HR SEC SCHOOL-<b>(SAMAYAPURAM)</b>TRICHY</option>
+        <option value="src">SRV MATRIC HR SEC SCHOOL-<b>(KARUMANADAPAM)</b>TRICHY</option>
+        <option value="we">CHELLAMAL MATRIC HR SEC SCHOOL TRICHY</option>
+        <option value="qw">SOWDAMBIKA MATRIC HR SEC SCHOOL- TRICHY</option>
+        <option value="er">KENDARA VIDAYALA CBSE - TRICHY</option>
+        <option value="df">ALPHA CBSE -TRICHY</option>
+        <option value="fg">MONTFORT MATRIC HR SEC SCHOOL-TRICHY</option>
+    </select>
+    <h3>Fill the below box if you have any queries:</h3>
+    <label for="paddress"><b>QUERIES:</b></label>
+    <textarea type="text" name="paddress"></textarea><br><br>
+    <input type="submit">
+    <input type="button" value="Reset">
+    <br><br>
+</div>
+<center>
+    <section id="About">
+<table>
+    <table border="3px">
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>AGE</th>
+            <th>FOOD-SELECTED</th>
+            <th>DEPARTMENTS</th>
+            <th>SCHOOLING</th>
+            <th>DESCRIPTION</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>AJITH GANAPATHY.A</td>
+            <td>hiajetganapathy@gmail.com</td>
+            <td>18</td>
+            <td>IDLY</td>
+            <td>INFORMATION-TECHNOLOGY</td>
+            <td>SRV MATRIC HR SEC SCHOOL</td>
+            <td>GOOD</td>
+
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>DHARUN UDHAYA.K</td>
+            <td>dharunudhaya12@gmail.com</td>
+            <td>18</td>
+            <td>DOSA</td>
+            <td>INFORMATION-TECHNOLOGY</td>
+            <td>CHELLAMAL MATRIC HR SEC SCHOOL</td>
+            <td>GOOD</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>RAHUL GOWTHAM.R</td>
+            <td>rahulgowtham32@gmail.com</td>
+            <td>17</td>
+            <td>IDLY</td>
+            <td>COMPUTER SCIENCE ENGINEERING</td>
+            <td>ALPHA(CBSE)</td>
+            <td>GOOD</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>DEEPAK KUMAR .R</td>
+            <td>deepakkumarcse@saranathan.ac.in</td>
+            <td>17</td>
+            <td>DOSA</td>
+            <td>COMPUTER SCIENCE ENGINEERING</td>
+            <td>MONTFORT MATRIC HR SEC SCHOOL</td>
+            <td>GOOD</td>
+        </tr>
+</table>
+</section>
+</center>
+<center>
+    <h3 id="thank">THANK YOU</h3>
+</center><br><br>
+</body>
+</html>

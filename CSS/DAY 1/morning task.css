@@ -1,0 +1,24 @@
+#text{
+    background-color: brown;
+    color:white;
+    font-size:x-large;
+}
+input [type="button"]{
+    width:40px;
+    background-color: blue;
+}
+#container{
+    font-size: 30px;
+    margin-left: 50px;
+    background-color: red;
+}
+#space{
+    margin: 10px 0;
+}
+.para{
+    margin-left: 30px;
+
+}
+h2{
+    text-align: center;
+}

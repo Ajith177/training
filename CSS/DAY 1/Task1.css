@@ -1,0 +1,38 @@
+body{
+    background-image:url("blue.jpg")
+}
+#form{
+    text-align: center;
+}
+#sara{
+    text-align: center;
+    background-color: coral;
+    width:fit-content;
+    position:sticky;
+    top:0;
+    left: 0
+}
+#thank{
+    color:white;
+    background-color: black;
+    width:fit-content;
+}
+#counsil{
+    background-color:black;
+    color:white;
+    font-size: 20px;
+}
+#college{
+    background-color: firebrick;
+    color:white;
+    width:fit-content;
+}
+#ajith{
+    background-color: crimson;
+    text-decoration: none;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    padding: 0 120px;
+}

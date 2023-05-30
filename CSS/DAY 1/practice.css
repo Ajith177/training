@@ -1,0 +1,32 @@
+#welcome{
+    background-color:black;
+    color:white;
+    font-size: 35px;
+}
+#zybisys{
+    background-color: red;
+    color:white;
+    font-size: x-large;
+    width:fit-content;
+}
+#first{
+    background-image:url("");
+    width:400px;
+    height:400px;
+    margin-right: 100%;
+}
+#section{
+     display: flex;   
+}
+#headerla{
+    background-color:black;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0 12
+    0px;
+}
+body{
+    background-color:red;
+}

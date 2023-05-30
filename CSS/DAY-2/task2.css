@@ -1,0 +1,19 @@
+body{
+    background-color: wheat;
+}
+#div1{
+    display:flex;
+    justify-content: space-between;
+}
+#image{
+    width: 100px;
+    border:2px solid black;
+}
+#h3{
+    background-color: coral;
+}
+#image2{
+    width:100px;
+    height: 150px;
+    margin-left:50px;
+}

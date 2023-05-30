@@ -1,0 +1,58 @@
+#post{
+    background-color: beige;
+    font-size: 40px;
+}
+body{
+    background-image:url("../DAY-2/blue.jpg");
+}
+header{
+    background-color: darkslategray;
+}
+header nav a{
+    text-decoration: none;
+    color:white;
+    padding: 110px;
+}
+#lcu{
+    background-color:red;
+    font-size:xx-large;
+    width:fit-content;
+    margin-left: 450px;
+    position:sticky;
+    top:0;
+    left:0;
+    color:white;
+}
+#box1{
+    display:flex;
+    font-weight: bold;
+    
+    
+}
+#kaithi{
+
+    width:300px;
+    height:250px;
+}
+.poster{
+    margin: 20px;
+    border:2px solid black;
+    background-color:wheat;
+
+}
+#box2{
+    font-weight:bold;
+}
+.design{
+    background-color:thistle;
+    width:fit-content;
+    margin-left: 500px;
+
+}
+#box3{
+    display:flex;
+    font-weight: bold;
+}
+#box4{
+    font-weight: bold;
+}

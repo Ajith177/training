@@ -1,0 +1,39 @@
+#header{
+    background-color:#999966;
+    width:1400px;
+    height:60px;
+    /* padding: 50px; */
+}
+header nav a{
+    text-decoration: none;
+    color:whitesmoke;
+    justify-content:flex-start;
+    padding-top:50px;
+    padding-left: 90px;
+    /* /* border: 1px solid black; */
+} 
+nav{
+    padding-top: 20px;
+}
+#main{
+    display:flex;
+    justify-content: center;
+    height:250;
+}
+section{
+    padding-top: 50px;
+}
+.item{
+    border: 1px solid black;
+    margin:30px;
+    background-color: bisque;
+    flex-wrap: wrap;
+}
+#foot{
+    text-align: center;
+    margin-top: 180px;
+    font-weight: bold;
+    background-color: grey;
+    width:auto;
+    color:white;
+}
