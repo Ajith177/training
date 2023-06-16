@@ -1,0 +1,205 @@
+body {
+  margin-top: 0;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  padding-left: 40px;
+  margin-right: 0px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#left {
+  color: blue;
+  text-decoration: none;
+}
+#image {
+  width: 15px;
+  margin-left: 30px;
+  border: white;
+}
+header nav {
+  background-color: rgb(29, 29, 31);
+  padding: 10px;
+  padding-left: 100px;
+  max-width: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+#ads {
+  text-align: center;
+  font-family: sans-serif;
+  opacity: 80%;
+  font-size: 14px;
+}
+section {
+  background-color: black;
+}
+div {
+  justify-content: center;
+}
+div video {
+  margin-left: 400px;
+  padding-top: 40px;
+  height: 300px;
+}
+div p {
+  color: white;
+  font-size: 106.25%;
+  font-weight: 600;
+  font-family: serif;
+}
+div a {
+  font-size: 106.25%;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: blue;
+  text-decoration: none;
+}
+.main_content {
+  padding-top: 30px;
+}
+#design_2 {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#design_3 {
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  padding-top: 0px;
+}
+#design_4 {
+  color: black;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#design_5 {
+  color: black;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+#sales {
+  background-color: black;
+  max-width: fit-content;
+}
+#horizontal_iphone {
+  padding-top: -240px;
+  height: 300px;
+}
+#classifier {
+  background-color: black;
+  width: 100%;
+  padding-top: 50px;
+}
+#flex {
+  width: 150px;
+}
+#watch {
+  width: 400px;
+  padding-left: 50px;
+  margin-bottom: -50px;
+}
+#watch_logo {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: -10px;
+}
+#macbookpro {
+  padding-top: 30px;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+#flex_2 {
+  width: 400px;
+}
+#macbookpro_series {
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#macbook_23 {
+  color: black;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding-top: -10px;
+  padding-left: 30px;
+}
+#lovable {
+  width: 400px;
+}
+#macbook_2 {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 400;
+  padding-top: -10px;
+}
+#watches {
+  width: 150px;
+  margin-left: 20px;
+  padding-top: 40px;
+}
+#again_again {
+  width: 600px;
+}
+#again_watch {
+  background-image: url("promo_pride23__cnpic94fthle_small_2x.jpg");
+  width: 300px;
+}
+#chip {
+  width: 30px;
+}
+.ajith {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#classifier_2,
+#classifier_4,
+#classifier_5 {
+  background-color: black;
+}
+#new_laptop {
+  width: 500px;
+}
+#home_pod {
+  width: 400px;
+}
+#foot {
+  color: black;
+  margin-left: 50px;
+  margin-right: 50px;
+  opacity: 50%;
+  font-size: 14px;
+}
+#last {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  color:grey;
+  padding-left: 30px;
+  padding-right:30px;
+  font-family:sans-serif;
+  font-size: 12px;
+
+}
+ul {
+  list-style: none;
+}
+#last_6,#last_7{
+  margin-left:60px;
+  font-size:12px;
+  font-family: sans-serif;
+  color:grey;
+
+}
