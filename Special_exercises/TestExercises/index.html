@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application-Programming-Interface</title>
+    <style>
+      h1 u {
+        background-color: black;
+        width: fit-content;
+        color: aqua;
+      }
+      body {
+        background-color: wheat;
+      }
+      #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: white;
+        font-size: 12px;
+        padding: 20px;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1><u>Application-Programming-Interface</u></h1>
+    </center>
+    <main>
+      <center>
+        <section>
+          <input
+            type="text"
+            color="wheat"
+            placeholder="Enter your name of the city"
+            id="location_name"
+            required
+          />
+          <input
+            type="submit"
+            id="submit"
+            value="Get location data"
+            onclick="Weatherdata()"
+          />
+        </section>
+      </center>
+    </main>
+    <div id="popup" class="popup">
+      <p class="close-icon" onclick="close_popup()"></p>
+      <h2 id="locationname"></h2>
+      <p id="temperature"></p>
+      <p id="humidity"></p>
+    </div>
+    <div id="openpopup" class="openpopup"></div>
+
+    <script>
+      function Weatherdata() {
+        try {
+          let location_input = document.getElementById("location_name").value;
+          //let captureLocationName = location_input.value
+
+          const API_KEY = "c7a9299a3d8da1d910da08bcffb48a3b";
+          let url = `http://api.openweathermap.org/data/2.5/weather?q=${location_input}&appid=${API_KEY}`;
+
+          fetch(url)
+            .then((response) => response.json())
+            .then((response) => {
+              if (response.cod == 200) {
+                let location_input = response.name;
+                let temperature = response.main.temp;
+                let humidity = response.main.humidity;
+
+                showpopup(location_input, temperature, humidity);
+
+                console.log("hello");
+              } else {
+                ("no location found");
+              }
+            })
+            .catch((error) => {
+              alert("Api_error: ${error.message}");
+            });
+
+          function showpopup(input1, input2, input3) {
+            let location_name = document.getElementById("locationname");
+            let temperature = document.getElementById("temperature");
+            let humidity = document.getElementById("humidity");
+
+            location_name.innerHTML = input1;
+            temperature.innerHTML = `temperature:${input2.toFixed(2)}°C`;
+            humidity.innerHTML = `humidity:${input3}%`;
+
+            // console.log(location_name)
+            // console.log(temperature)
+            // console.log(humidity)
+
+            openpopup();
+          }
+        } catch (error) {
+          alert(`getweatherdetails:${error.message}`);
+        }
+      }
+      let popup = document.getElementById("popup");
+
+      const openpopup = () => {
+        popup.style.display = "block";
+      };
+      const close_popup = () => {
+        popup.style.display = "none";
+      };
+    </script>
+  </body>
+</html>
