@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <style>
+        h2 u{
+            background-color: black;
+            width:fit-content;
+            color:white;
+        }
+        .popup
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+            <h2><u>Application-Programming-Interface</u></h2>
+        </center>
+    </header>
+
+    <main>
+        <section id="section1">
+            <center>
+                <input type="text" id="locationname" placeholder="enter the name of the city" required>
+                <input type="submit" value="Get_data" onclick="weatherapp()">
+                <!-- <input type="submit" value="STORE" onclick="datastore()"> -->
+            </center>
+            <div id="popup" class="popup">
+                <p id="clospopup"></p>
+                <h2 id="location"></h2>
+                <p id="temperature"></p>
+                <p id="humidity"></p>
+            </div>
+        </section>
+
+        <section id="section2">
+            <center>
+                <table border="2px" id="table">
+                    <tr>
+                        <th> LOCATION_NAME </th>
+                        <th> TEMPERATURE </th>
+                        <th> HUMIDITY </th>
+                        <th>FUNCTIONALITIES</th>
+                        <th>AVOIDED</th>
+                    </tr>
+                </table>
+            </center>
+        </section>
+
+    </main>
+    <script>
+
+
+      function weatherapp(){
+
+        
+        try{
+        let location=document.getElementById("locationname").value;
+        console.log("hello")
+
+        let API_KEY= "c7a9299a3d8da1d910da08bcffb48a3b";
+        console.log("ajith")
+
+        let url = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`
+
+        fetch (url).then((response)=>response.json()).then(response =>{
+            if(response.cod ==200){
+                let temperature =response.main.temp-273.15;
+                let humidity= response.main.humidity;
+                let location=response.name;
+                console.log("naan")
+
+                showpopup(location,temperature,humidity)
+
+            }
+            else{
+                alert(`no location found ${location} is  not in the database.`)
+            }
+        })
+        .catch(error =>{
+            alert(`API_ERROR :${error.message}`)
+        });
+
+
+         function showpopup(ln, temp, hum) {
+                let location_input = document.getElementById("location")
+                let temperature = document.getElementById("temperature")
+                let humidity = document.getElementById("humidity")
+
+                location_input.innerHTML = ln
+                temperature.innerHTML = `temperature:${temp.toFixed(2)}°C`
+                humidity.innerHTML = `humidity:${hum}%`
+
+                console.log("leo")
+
+                datastore(location,temperature,humidity)
+         
+         
+
+            
+        function datastore(location, temperature, humidity) {
+                 let table_name = document.getElementById("table");
+                 let row = table.insertRow();
+                 let cell_1 = row.insertCell(0);
+                 let cell_2 = row.insertCell(1);
+                 let cell_3 = row.insertCell(2);
+                 let cell_4 = row.insertCell(3);
+                 let cell_5 = row.insertCell(4);
+
+                cell_1.innerHTML =ln;
+                cell_2.innerHTML =`temperature:${temp.toFixed(2)}°C`;
+                cell_3.innerHTML =`${hum}%`;
+                cell_4.innerHTML = '<input type="submit" value="show" onclick="show(this)">'
+                cell_5.innerHTML = '<input type="submit" value="delete">'
+
+                cell_5.addEventListener("click",() => {
+                row.remove(cell_1);
+        })
+
+    }
+    }
+
+}
+      catch(error){
+        alert(`Weatherapp:${error.message}`)
+      }
+}
+
+function show()
+{
+    popup.style.display="block"
+}
+    // function datastore(ln,temp,hum){
+    //     let table_name= document.getElementById("table");
+    //     let row=table.insertRow();
+    //     let cell_1=row.insertCell(0);
+    //     let cell_2=row.insertCell(1);
+    //     let cell_3=row.insertCell(2);
+
+    //     cell_1.innerHTML=
+    //     cell_2.innerHTML=temp;h
+    //     cell_3.innerHTML=hum;
+
+
+
+
+    // }
+
+    function showpopup(){
+        let getting_location =document.getElementById("location");
+        let getting_temperature =document.getElementById("")
+    }
+
+
+
+    </script>
+</body>
+</html>
