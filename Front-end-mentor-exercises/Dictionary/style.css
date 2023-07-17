@@ -1,0 +1,442 @@
+:root{
+    --primarycolor:#edf2fc;
+    --secondarycolor:#212121;
+}
+*
+{
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+#divide_1{
+    background-color:white;
+    
+}
+#division_1
+{
+    display:flex;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    margin-left:180px;
+
+}
+#text_name
+{
+    padding:11px;
+    border-color:#f4f4f4;
+    border-style: none;
+    background-color: var(--primarycolor);
+    margin-top:10px;
+    border-radius:15px;
+    padding-left:180px;
+}
+#submit
+{
+    /* margin-left:-80px; */
+    cursor:pointer;
+    margin-top:18px;
+    width:20px;
+    height:20px;
+    margin-left:-30px;
+}
+#book
+{
+    width:40px;
+     margin-left:100px; 
+}
+#section_1,#sub_division,#division_6,#division_40,#division_3,#division_8
+{
+    display:flex;
+}
+#sub_division
+{
+    margin-left:350px;
+
+}
+#symbol
+{
+    size:20px;
+    margin-left:20px;
+}
+
+#moon
+{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    margin-left:30px;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#divide_1
+{
+    /* background-color: aqua; */
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#para_1
+{
+    font-size: 20px;
+    font-weight: bold;
+   padding-left:-130px;
+    
+}
+#languages
+{
+    padding-left: -30px;
+}
+#check
+{
+    margin-top:-20px;
+    margin-left:40px;
+    border-radius: 40px;
+}
+#division_2
+{
+   
+    padding-top:30px;
+   
+    
+}
+#division_8
+{
+    border:1px solid black;
+    border-radius: 10px;
+}
+#heading
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+#heading_1,#heading_9
+{
+    color:darkorchid;
+}
+#heading_4,#heading_8,#heading_3,#para_20
+{
+    font-weight: bold;
+}
+#heading_5
+{
+    color:grey;
+    padding-top: 20px;
+    font-size:20px;
+}
+#content
+{
+    padding-top:30px;
+    margin-left:90px;
+    margin-right:50px;
+}
+#heading_7
+{
+    padding-left:50px;
+    font-weight: bold;
+    color:darkorchid;
+}
+#fifth
+{
+    color:grey;
+}
+#line
+{
+    font-size:15px;
+    margin-left:20px;
+    text-decoration: underline;
+    
+}
+#video
+{
+    width:40px;
+    padding-left:340px;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius:10px;
+}
+#heading_1,#heading_3,#heading,#heading_5,#heading_6,#heading_7,#heading_8,#para_20
+{
+    margin-left:35px;
+}
+#fifth,#inline
+{
+    margin-left:65px;
+}
+#cursive,#fantasy,#verdana,#timesnewroman,#option
+{
+    font-weight: bold;
+}
+#divide_1
+{
+background-color:white;
+        
+}
+    #division_1
+{
+    display:flex;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    margin-left:70px;
+}
+#divide_1
+{
+    /* background-color: aqua; */
+    width:940px;
+    display: flex;
+    margin-left:20px;
+}
+#book
+{
+    width:30px;
+    margin-left:80px; 
+    margin-top:10px;
+}
+#text_name
+{
+    padding:10px;
+    border-color:#f4f4f4;
+    padding-right:120px;
+    margin-left:20px;
+    border-style: none;
+    background-color: var(--primarycolor);
+    margin-top:10px;
+    border-radius:10px;
+}
+#submit
+{
+    margin-left:-30px;
+    cursor:pointer;
+    width:20px;
+    border-radius: 10px;
+    
+}
+#para_1
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left:-80px;
+    margin-top:10px;
+    padding-left:40px;
+    
+}
+#symbol
+{
+    size:20px;
+    margin-left:3px;
+    margin-top:7px;
+}
+#moon
+{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+    margin-top:7px;
+
+}
+#video
+{
+    width:20px;
+    padding-left:60px;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left:90px;
+}
+#check
+{
+    margin-top:-10px;
+    border-radius: 40px;
+}
+#heading_1,#heading,#heading_3,#heading_5,#heading_6,#heading_7,#para_20,#fifth
+{
+    margin-left:80px;
+}
+
+.label {
+    background-color: #3f3f3f;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 5px;
+    width: 20px;
+    transform: scale(1.5);
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 1px;
+    height: 13px;
+    width: 15px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  .checkbox:checked + .label .ball {
+    transform: translateX(10px);
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+@media screen and (min-width:320px) and (max-width:426px){
+    #main-container{
+        display: flex;
+        flex-direction: column;
+        margin-left:105px;
+    }
+
+    #division_1
+    {
+        display:flex;
+        border-radius: 10px;
+        outline: none;
+        border:none;
+        margin-left:120px;
+    
+    }
+#divide_1
+{
+    /* background-color: aqua; */
+    width:650px;
+    display: flex;
+    margin-left:5px;
+}
+#para_1
+{
+    font-size: 20px;
+    font-weight: bold;
+     margin-left:-40px;
+    
+}
+#sub_division
+{
+    margin-left:200px;
+
+}
+#video
+{
+    width:40px;
+    padding-top: 10px;
+    cursor: pointer;
+    border-radius:10px;
+    margin-left:10px;
+}
+#content
+{
+    padding-top:30px;
+    margin-left:90px;
+    margin-right:50px;
+    font-size:29px;
+}
+#book
+{
+    width:50px;
+     margin-left:100px; 
+}
+#heading_5,#heading_6,#heading_7,#heading_1,#heading_3,#fifth,#inline
+{
+    font-size:25px;
+}
+#moon
+{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+#check
+{
+    margin-top:-20px;
+    border-radius: 40px;
+}
+#text_name
+{
+    padding:11px;
+    border-color:#f4f4f4;
+    border-style: none;
+    background-color: var(--primarycolor);
+    margin-top:10px;
+    border-radius:15px;
+    padding-left:180px;
+}
+#heading_1,#heading,#heading_3,#heading_5,#heading_6,#heading_7,#para_20,#fifth,#content
+{
+    margin-left:160px;
+}
+#inline
+{
+    margin-left:130px;
+}
+#line
+{
+    font-size:20px;
+}
+}
+
+@media screen and (max-width:768px){
+
+#main-container{
+        display: flex;
+        flex-direction: column;
+        margin-left:105px;
+    }
+#check
+{
+    margin-top:-10px;
+    border-radius: 40px;
+}
+#video
+{
+    width:40px;
+    padding-top: 10px;
+    margin-left:230px;
+    cursor: pointer;
+    border-radius:10px;
+}
+#heading_1,#heading_3,#heading_5,#content,#heading_6,#heading_7,#para_20,#inline,#line,#fifth
+{
+    font-size:20px;
+}
+#moon
+{
+    width:40px;
+    height:30px;
+    cursor:pointer;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Asynchronous feature     
+call back queue
+microtask queue
+event loop
+set timeout...
+giving  question mark to .innerhtml what happens it gives of undefined     optional CHANGE..... */
