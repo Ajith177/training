@@ -1,0 +1,16 @@
+body{
+    background-color: #36384d;
+}
+#section_1,#division_1
+{
+    background-color: white;
+    margin-left:150px;
+    margin-top:180px;
+    margin-right:320px;
+}
+#tick_mark
+{
+    width:20px;
+    height:20px;
+    border-radius: 10px;
+}
